@@ -1,0 +1,1 @@
+/usr/bin/c++   -g --std=c++11 -Wall   CMakeFiles/run.dir/test.cpp.o  -o run liblibrary.a 

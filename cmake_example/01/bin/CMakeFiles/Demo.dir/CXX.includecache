@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/frank/GitRootPath/Practice/cmake_example/01/./bin/config.h
+
+/home/frank/GitRootPath/Practice/cmake_example/01/main.cc
+stdio.h
+-
+stdlib.h
+-
+./bin/config.h
+/home/frank/GitRootPath/Practice/cmake_example/01/./bin/config.h
+math/MathFunctions.h
+/home/frank/GitRootPath/Practice/cmake_example/01/math/MathFunctions.h
+math.h
+-
+
+/home/frank/GitRootPath/Practice/cmake_example/01/math/MathFunctions.h
+

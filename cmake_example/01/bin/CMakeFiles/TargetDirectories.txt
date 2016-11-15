@@ -1,0 +1,14 @@
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/install.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/list_install_components.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/rebuild_cache.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/Demo.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/install/strip.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/install/local.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/CMakeFiles/edit_cache.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/install.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/list_install_components.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/rebuild_cache.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/MathFunctions.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/install/strip.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/install/local.dir
+/home/frank/GitRootPath/Practice/cmake_example/01/bin/math/CMakeFiles/edit_cache.dir
