@@ -1,1 +1,0 @@
-/usr/bin/g++   -g -Wall --std=gnu99 -lpthread   CMakeFiles/echoserver.dir/echoserver.c.o  -o echoserver -rdynamic libcsappLib.a 

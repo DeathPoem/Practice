@@ -1,5 +1,0 @@
-/home/frank/GitRootPath/Practice/books_homework/01/bin/CMakeFiles/edit_cache.dir
-/home/frank/GitRootPath/Practice/books_homework/01/bin/CMakeFiles/csappLib.dir
-/home/frank/GitRootPath/Practice/books_homework/01/bin/CMakeFiles/echoclient.dir
-/home/frank/GitRootPath/Practice/books_homework/01/bin/CMakeFiles/echoserver.dir
-/home/frank/GitRootPath/Practice/books_homework/01/bin/CMakeFiles/rebuild_cache.dir
