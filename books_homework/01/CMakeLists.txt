@@ -1,9 +1,19 @@
 #
-cmake_minimum_required(3.5)
+cmake_minimum_required(VERSION 2.8)
 
-#
-project(echo)
+# this would direct cmake to override the compiler
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
 
-add_executable(echo, main.c server.c)
+set(PROJECT_NAME myproject)
+project(${PROJECT_NAME})
 
-#set(CMAKE_CXX_FLAGS "-g -Wall --std=c++11")
+set(CMAKE_CXX_FLAGS "-g -Wall --std=gnu99 -lpthread")
+
+add_library(csappLib csapp.cpp)
+add_executable(echoclient echoclient.c)
+add_executable(echoserver echoserver.c)
+
+target_link_libraries(echoclient csappLib)
+target_link_libraries(echoserver csappLib)
+

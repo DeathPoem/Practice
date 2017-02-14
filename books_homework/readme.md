@@ -1,1 +1,1 @@
-## there are some project about 1000 lines
+## there are some projects about 1000 lines

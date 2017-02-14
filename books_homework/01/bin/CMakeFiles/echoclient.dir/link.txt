@@ -1,0 +1,1 @@
+/usr/bin/g++   -g -Wall --std=gnu99 -lpthread   CMakeFiles/echoclient.dir/echoclient.c.o  -o echoclient -rdynamic libcsappLib.a 
