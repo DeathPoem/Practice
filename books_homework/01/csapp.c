@@ -594,7 +594,7 @@ ssize_t rio_readn(int fd, void *usrbuf, size_t n)
 {
     size_t nleft = n;
     ssize_t nread;
-    char *bufp = usrbuf;
+    char *bufp = (char*)usrbuf;
 
     while (nleft > 0) {
         if ((nread = read(fd, bufp, nleft)) < 0) {
@@ -623,7 +623,7 @@ ssize_t rio_writen(int fd, void *usrbuf, size_t n)
 {
     size_t nleft = n;
     ssize_t nwritten;
-    char *bufp = usrbuf;
+    char *bufp = (char*)usrbuf;
 
     while (nleft > 0) {
         if ((nwritten = write(fd, bufp, nleft)) <= 0) {
@@ -703,7 +703,7 @@ ssize_t rio_readnb(rio_t *rp, void *usrbuf, size_t n)
 {
     size_t nleft = n;
     ssize_t nread;
-    char *bufp = usrbuf;
+    char *bufp = (char*)usrbuf;
 
     while (nleft > 0) {
         if ((nread = rio_read(rp, bufp, nleft)) < 0) 
@@ -726,7 +726,7 @@ ssize_t rio_readnb(rio_t *rp, void *usrbuf, size_t n)
 ssize_t rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) 
 {
     int n, rc;
-    char c, *bufp = usrbuf;
+    char c, *bufp = (char*)usrbuf;
 
     for (n = 1; n < maxlen; n++) { 
         if ((rc = rio_read(rp, &c, 1)) == 1) {
@@ -792,6 +792,8 @@ ssize_t Rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen)
 {
     ssize_t rc;
 
+    printf("it's so strange, printf send bytes to client!\n");
+    fprintf(stdout, "in rio_readlineb, rio_t->fd = %d, stdout fd = %d\r\n", rp->rio_fd, STDOUT_FILENO);
     if ((rc = rio_readlineb(rp, usrbuf, maxlen)) < 0)
         unix_error("Rio_readlineb error");
     return rc;

@@ -10,9 +10,11 @@
 #include <setjmp.h>
 #include <signal.h>
 #include <sys/time.h>
+#include <stdarg.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
+#include <execinfo.h>
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <errno.h>
